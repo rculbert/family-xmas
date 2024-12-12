@@ -1,3 +1,4 @@
+/* General body and background styles */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f8ff;
@@ -8,35 +9,56 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  animation: snow 10s infinite; /* Snow animation */
 }
 
+/* Snow animation (simple snow effect) */
+@keyframes snow {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
+
+/* Container for the main content */
 .container {
-  padding: 20px;
+  padding: 30px;
   margin-top: 100px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #d62828;
+  font-family: 'Cursive', sans-serif;
 }
 
 button {
-  background-color: #006d77;
+  background-color: #ff5733;
   color: white;
   border: none;
-  padding: 15px 30px;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-button:hover {
-  background-color: #83c5be;
-}
-
-#result {
-  margin-top: 20px;
+  padding: 20px 40px;
   font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #ff6f61;
+  transform: scale(1.1);
+}
+
+/* Result section */
+#result {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #003049;
 }
 
 .hidden {
@@ -46,20 +68,40 @@ button:hover {
 .category {
   font-weight: bold;
   color: #003049;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
-/* Style for the images */
+/* Style for the category images */
 .category-image {
-  width: 450px;  /* Adjust as needed */
+  width: 450px; /* Adjust as needed */
   height: auto;
   margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border: 5px solid #d62828;
+  transition: transform 0.3s ease;
 }
 
+/* Image hover effect */
+.category-image:hover {
+  transform: scale(1.05);
+}
+
+/* Style for the category section */
 #result img {
-  max-width: 100%; /* Ensure image scales properly */
+  max-width: 100%;
   margin-top: 15px;
   border: 2px solid #d62828;
+  border-radius: 10px;
+}
+
+/* Add some padding and background to text */
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  background-color: #ffedcc;
+  padding: 10px;
   border-radius: 10px;
 }
