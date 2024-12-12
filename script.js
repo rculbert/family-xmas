@@ -1,7 +1,7 @@
 // List of participants and categories
 const participants = [
   { name: 'Robert', category: 'Chocolate', image: 'assets/Chocolate.jpg' },
-  { name: 'Jeff', category: 'Beverages Cold', image: 'assets/beverages_cold.png' },
+  { name: 'Jeff', category: 'Beverages Cold', image: 'assets/beverages_cold.webp' },
   { name: 'Barb', category: 'Peanut Butter (spreads)', image: 'assets/peanut_butter.png' },
   { name: 'Katherine', category: 'Cheese', image: 'assets/cheese.png' },
   { name: 'Chris', category: 'Condiments', image: 'assets/condiments.png' },
