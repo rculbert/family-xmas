@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gift Exchange Reveal</title>
+  <title>Christmas Gift Exchange</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>🎄 Gift Exchange Reveal 🎁</h1>
-    <p>Click the button below to reveal your gift category!</p>
-    <button id="reveal-button">Reveal My Category</button>
-    <div id="result" class="hidden">
-      <p class="category">Your category is: <span id="category-name"></span>!</p>
+    <h1>🎄 Christmas Gift Exchange 🎁</h1>
+    <p>Click below to reveal your category!</p>
+    <button id="revealButton">Reveal My Category</button>
+    <div id="resultContainer" class="hidden">
+      <h2>Your Category: <span id="categoryName"></span></h2>
     </div>
   </div>
+  <audio id="christmasAudio" src="assets/ItsChristmas.m4a" preload="auto" loop></audio>
   <script src="script.js"></script>
 </body>
 </html>
