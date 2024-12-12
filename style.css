@@ -129,3 +129,8 @@ p {
   border-radius: 10px;
   font-family: 'Cursive', sans-serif;
 }
+
+html, body {
+  overflow: auto; /* Ensure scrolling is enabled */
+  overflow-x: hidden; /* Optional: prevent horizontal scroll */
+}
