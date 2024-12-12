@@ -1,11 +1,11 @@
 // List of participants and categories
 const participants = [
   { name: 'Robert', category: 'Chocolate', image: 'assets/Chocolate.jpg' },
-  { name: 'Jeff', category: 'Beverages Cold', image: 'assets/beverages_cold.webp' },
+  { name: 'Jeff', category: 'Cold Beverages', image: 'assets/beverages_cold.webp' },
   { name: 'Barb', category: 'Peanut Butter (spreads)', image: 'assets/peanut_butter.webp' },
   { name: 'Katherine', category: 'Cheese', image: 'assets/cheese.jpg' },
   { name: 'Chris', category: 'Condiments', image: 'assets/condiments.webp' },
-  { name: 'Sue', category: 'Beverages Hot', image: 'assets/beverages_hot.jpg' },
+  { name: 'Sue', category: 'Hot Beverages', image: 'assets/beverages_hot.jpg' },
 ];
 // Reveal button logic
 document.getElementById('reveal-button').addEventListener('click', () => {
