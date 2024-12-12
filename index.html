@@ -1,6 +1,20 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Exchange Reveal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <p>Hi Alice!</p>
-  <p>It's time to reveal your gift exchange category!</p>
+  <div class="container">
+    <h1>🎄 Gift Exchange Reveal 🎁</h1>
+    <p>Click the button below to reveal your gift category!</p>
+    <button id="reveal-button">Reveal My Category</button>
+    <div id="result" class="hidden">
+      <p class="category">Your category is: <span id="category-name"></span>!</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
