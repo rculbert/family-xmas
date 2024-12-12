@@ -1,11 +1,11 @@
 // List of participants and categories
 const participants = [
-  { name: 'Alice', category: 'Books' },
-  { name: 'Bob', category: 'Toys' },
-  { name: 'Charlie', category: 'Food' },
-  { name: 'David', category: 'Clothing' },
-  { name: 'Eve', category: 'Tech' },
-  { name: 'Frank', category: 'Sports' },
+  { name: 'Robert', category: 'Chocolate' },
+  { name: 'Jeff', category: 'Beverages Cold' },
+  { name: 'Barb', category: 'Peanut Butter (spreads)' },
+  { name: 'Katherine', category: 'Cheese' },
+  { name: 'Chris', category: 'Condiments' },
+  { name: 'Sue', category: 'Beverages Hot' },
 ];
 
 // Reveal button logic
