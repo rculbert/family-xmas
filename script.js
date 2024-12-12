@@ -1,13 +1,12 @@
 // List of participants and categories
 const participants = [
-  { name: 'Robert', category: 'Chocolate' },
-  { name: 'Jeff', category: 'Beverages Cold' },
-  { name: 'Barb', category: 'Peanut Butter (spreads)' },
-  { name: 'Katherine', category: 'Cheese' },
-  { name: 'Chris', category: 'Condiments' },
-  { name: 'Sue', category: 'Beverages Hot' },
+  { name: 'Robert', category: 'Chocolate', image: 'assets/chocolate.png' },
+  { name: 'Jeff', category: 'Beverages Cold', image: 'assets/beverages_cold.png' },
+  { name: 'Barb', category: 'Peanut Butter (spreads)', image: 'assets/peanut_butter.png' },
+  { name: 'Katherine', category: 'Cheese', image: 'assets/cheese.png' },
+  { name: 'Chris', category: 'Condiments', image: 'assets/condiments.png' },
+  { name: 'Sue', category: 'Beverages Hot', image: 'assets/beverages_hot.png' },
 ];
-
 // Reveal button logic
 document.getElementById('reveal-button').addEventListener('click', () => {
   // Get the query parameter for the participant (e.g., ?name=Alice)
