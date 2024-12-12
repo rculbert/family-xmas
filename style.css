@@ -100,9 +100,10 @@ button:hover {
 
 /* Category Image Styles */
 .category-image {
+  display: block; /* Ensures images do not appear inline */
+  margin: 20px auto; /* Centers images and adds spacing */
   width: 400px;
   height: auto;
-  margin-top: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   border: 5px solid #d62828;
