@@ -31,6 +31,9 @@ document.getElementById('reveal-button').addEventListener('click', () => {
 });
 
 const audio = document.getElementById("christmasAudio");
-if (audio.paused) {
+document.getElementById("reveal-button").addEventListener("click", () => {
+  // Start playback after user interaction
+  if (audio.paused) {
     audio.play().catch(err => console.error("Audio playback error:", err));
-}
+  }
+});
