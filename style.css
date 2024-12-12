@@ -49,6 +49,7 @@ body {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  overflow: auto; /* Ensure scrolling is enabled */
 }
 
 /* Headline */
