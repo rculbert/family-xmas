@@ -1,64 +1,89 @@
-/* General body and background styles */
+/* Global Styles */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f8ff;
-  background-image: url('assets/snowflake-pattern.png'); /* Replace with your image */
-  background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
-  color: #333;
   margin: 0;
   padding: 0;
-  animation: snow 10s infinite; /* Snow animation */
+  overflow: hidden;
+  background-image: url('assets/christmas-background.jpg'); /* Christmas background */
+  background-size: cover;
+  background-position: center;
 }
 
-/* Snow animation (simple snow effect) */
+/* Snowflake Animation */
+.snowflakes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  font-size: 30px;
+  animation: snow 10s linear infinite;
+  opacity: 0.8;
+}
+
 @keyframes snow {
-  0% { background-position: 0 0; }
-  100% { background-position: 0 100%; }
+  0% {
+    transform: translateX(0) translateY(-10px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(100px) translateY(100vh);
+    opacity: 0;
+  }
 }
 
-/* Container for the main content */
+/* Container for content */
 .container {
   padding: 30px;
   margin-top: 100px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 15px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Headline */
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #d62828;
-  font-family: 'Cursive', sans-serif;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Button Style */
 button {
-  background-color: #ff5733;
+  background-color: #ff6347; /* Tomato color for Christmas */
   color: white;
   border: none;
   padding: 20px 40px;
   font-size: 1.2rem;
   cursor: pointer;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
 }
 
-/* Button hover effect */
 button:hover {
-  background-color: #ff6f61;
+  background-color: #ff4500; /* Lighter red on hover */
   transform: scale(1.1);
 }
 
-/* Result section */
+/* Result Section */
 #result {
   margin-top: 30px;
   font-size: 1.5rem;
   color: #003049;
+  text-align: center;
 }
 
 .hidden {
@@ -72,23 +97,21 @@ button:hover {
   margin-bottom: 20px;
 }
 
-/* Style for the category images */
+/* Category Image Styles */
 .category-image {
-  width: 450px; /* Adjust as needed */
+  width: 400px;
   height: auto;
   margin-top: 20px;
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   border: 5px solid #d62828;
   transition: transform 0.3s ease;
 }
 
-/* Image hover effect */
 .category-image:hover {
   transform: scale(1.05);
 }
 
-/* Style for the category section */
 #result img {
   max-width: 100%;
   margin-top: 15px;
@@ -104,4 +127,5 @@ p {
   background-color: #ffedcc;
   padding: 10px;
   border-radius: 10px;
+  font-family: 'Cursive', sans-serif;
 }
