@@ -29,3 +29,11 @@ document.getElementById('reveal-button').addEventListener('click', () => {
     resultDiv.classList.remove('hidden');
   }
 });
+
+const audio = document.getElementById("christmasAudio");
+document.getElementById("reveal-button").addEventListener("click", () => {
+  // Start playback after user interaction
+  if (audio.paused) {
+    audio.play().catch(err => console.error("Audio playback error:", err));
+  }
+});
