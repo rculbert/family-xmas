@@ -1,11 +1,11 @@
 // List of participants and categories
 const participants = [
-  { name: 'Barb', category: 'Snacks', image: 'assets/fall-snack-mix.jpg' },
-  { name: 'Katherine', category: 'Hot Drinks', image: 'assets/Hot-drinks-2025.jpg' },
-  { name: 'Robert', category: 'Sauces', image: 'assets/Sauces-2025.jpeg' },
-  { name: 'Jeff', category: 'Cold Drinks', image: 'assets/Coldrinks-2025.webp' },
-  { name: 'Sue', category: 'Spreads', image: 'assets/spreads-2025.webp' },
-  { name: 'Chris', category: 'Cookies / Bakery Items', image: 'assets/Cookies-2025.jpg' },
+  { name: 'Barb', category: 'Snacks', description:'Chips, candy, nuts, trail mix', image: 'assets/fall-snack-mix.jpg' },
+  { name: 'Katherine', category: 'Hot Drinks', description:'Hot chocolate, coffee, tea', image: 'assets/Hot-drinks-2025.jpg' },
+  { name: 'Robert', category: 'Sauces', description:'Hot sauce, condiments, mustard, chocolate sauce', image: 'assets/Sauces-2025.jpeg' },
+  { name: 'Jeff', category: 'Cold Drinks', description:'Pop, beer, wine', image: 'assets/Coldrinks-2025.webp' },
+  { name: 'Sue', category: 'Spreads', description:'Jam, peanut butter, cinnamon toast spread', image: 'assets/spreads-2025.webp' },
+  { name: 'Chris', category: 'Cookies / Bakery Items', description:'Could bake your own or buy', image: 'assets/Cookies-2025.jpg' },
 ];
 // Reveal button logic
 document.getElementById('reveal-button').addEventListener('click', () => {
