@@ -5,7 +5,7 @@ const participants = [
   { name: 'Robert', category: 'Sauces', image: 'assets/Sauces-2025.jpeg' },
   { name: 'Jeff', category: 'Cold Drinks', image: 'assets/Coldrinks-2025.webp' },
   { name: 'Sue', category: 'Spreads', image: 'assets/spreads-2025.webp' },
-  { name: 'Chris', category: 'Cookies', image: 'assets/Cookies-2025.jpg' },
+  { name: 'Chris', category: 'Cookies / Bakery Items', image: 'assets/Cookies-2025.jpg' },
 ];
 // Reveal button logic
 document.getElementById('reveal-button').addEventListener('click', () => {
