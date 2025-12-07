@@ -19,15 +19,18 @@ document.getElementById('reveal-button').addEventListener('click', () => {
   // Display their category or an error if not found
   const resultDiv = document.getElementById('result');
   const categoryName = document.getElementById('category-name');
+  const categoryDescription = document.getElementById('category-description');
   const categoryImage = document.getElementById('category-image');
   
   if (participant) {
     categoryName.textContent = participant.category;
+    categoryDescription.textContent = participant.description;
     categoryImage.src = participant.image;  // Use the image directly from the participant object
     categoryImage.alt = `${participant.category} Image`;
     resultDiv.classList.remove('hidden');
   } else {
     categoryName.textContent = 'Error: Participant not found!';
+    categoryDescription.textContent = '';
     categoryImage.src = ''; 
     resultDiv.classList.remove('hidden');
   }
