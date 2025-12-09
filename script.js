@@ -11,7 +11,7 @@ const participants = [
 document.getElementById('reveal-button').addEventListener('click', () => {
   // Get the query parameter for the participant (e.g., ?name=Alice)
   const urlParams = new URLSearchParams(window.location.search);
-  const participantName = urlParams.get('name');
+  const participantName = urlParams.get('newName');
 
   // Find the participant
   const participant = participants.find(p => p.name === participantName);
